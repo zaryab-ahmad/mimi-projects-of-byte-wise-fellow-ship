@@ -1,0 +1,89 @@
+mini project 2
+name Guessing a Number
+
+import random
+top_of_rang = input("type any number ")
+if top_of_rang.isdigit():
+top_of_rang = int(top_of_rang)
+if top_of_rang <= 0:
+print(" please type a number ")
+quit()
+else:
+print(" please type a number larger then o")
+quit()
+random_number = random.randint(0, top_of_rang)
+guesses = 0
+while True:
+guesses += 1
+user_guess = input("make any guess")
+if user_guess.isdigit():
+user_guess = int(user_guess)
+else:
+print(" please type a number next time ")
+continue
+if user_guess == random_number:
+print("you got it ")
+break
+elif user_guess > random_number:
+print(" you were above then guess number ")
+else:
+print("you were below the guess number ")
+
+print("you got it in ",guesses, "guesses")
+
+@zaryab-ahmad
+Owner
+Author
+zaryab-ahmad commented on 136b69c 19 minutes ago
+mini project 1
+name quiz
+
+print("welcome to zaryab computer ")
+playing = input(" do you want to play : ")
+if playing.lower() !="yes":
+quit()
+score=0
+i=0
+print(" lets play : ")
+answer =input(" what my name is : ")
+if answer.lower() == "zaryab ahmad":
+print("correct ")
+score+=2
+i+=1
+else:
+print("incorrect ")
+answer = input(" what is my subject : ")
+if answer.upper()== "CS":
+print("correct ")
+score += 2
+i+=1
+else:
+print("incorrect ")
+answer =input(" my fellowship is with .....: ")
+if answer.lower() == "bytewise":
+print("correct ")
+score+=2
+i+=1
+else:
+print("incorrec ")
+answer =input(" which project its is : ")
+if answer.lower() == "quiz":
+print("correct ")
+score+=2
+i+=1
+else:
+print("incorrect ")
+answer =input(" task no is : ")
+if answer.lower() == "8":
+print("correct ")
+score+=2
+i+=1
+else:
+print("incorrect ")
+print(" here your score is .......")
+score_per =(score/i)*100
+if score_per >50:
+print(" congrats you pass the quiz :")
+else:
+print(" sorry your score id less then 50 try agin")
+
