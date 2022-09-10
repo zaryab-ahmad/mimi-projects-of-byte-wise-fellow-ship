@@ -1,1 +1,1 @@
-# mimi-projects-of-byte-wise-fellow-ship
+# mini-projects-of-byte-wise-fellow-ship
